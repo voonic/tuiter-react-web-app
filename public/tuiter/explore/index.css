@@ -1,5 +1,5 @@
 body.wd-defaults {
-  font-size: 14px;
+  font-size: 15px;
   background-color: #000;
   padding-left: 16px;
   margin: 0;
@@ -63,12 +63,38 @@ body.wd-defaults {
   width: 100%;
 }
 
-.wd-color-active,
-a.wd-color-active,
-a.wd-color-active:active,
-a.wd-color-active:hover,
-a.wd-color-active:visited {
-  color: rgb(29, 161, 242);
+.wd-color-active a,
+.wd-color-active a:active,
+.wd-color-active a:hover,
+.wd-color-active a:visited {
+  color: rgb(29, 161, 242) !important;
   outline: none;
   text-decoration: none;
+}
+
+.wd-menu-box {
+  margin-top: 10px;
+}
+
+.wd-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wd-menu>li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.wd-menu a {
+  color: rgb(110, 118, 125);
+  outline: none;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wd-menu .wd-color-active a {
+  border-bottom: 3px rgb(29, 161, 242) solid;
 }
