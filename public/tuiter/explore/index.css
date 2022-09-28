@@ -1,8 +1,12 @@
 body.wd-defaults {
   font-size: 15px;
   background-color: #000;
-  padding-left: 16px;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-pl-16 {
+  padding-left: 16px;
 }
 
 .wd-defaults * {
@@ -73,7 +77,7 @@ body.wd-defaults {
 }
 
 .wd-menu-box {
-  margin-top: 10px;
+  border-bottom: 2px rgb(47, 51, 54) solid;
 }
 
 .wd-menu {
@@ -84,15 +88,18 @@ body.wd-defaults {
 
 .wd-menu>li {
   display: inline-block;
-  margin-right: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .wd-menu a {
   color: rgb(110, 118, 125);
   outline: none;
   text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
+  font-size: 15px;
 }
 
 .wd-menu .wd-color-active a {
