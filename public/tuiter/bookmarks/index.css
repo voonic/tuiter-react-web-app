@@ -1,0 +1,14 @@
+.wd-heading {
+  margin-left: 16px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.wd-sub-heading {
+  color: rgb(110, 118, 125);
+  margin-left: 16px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
