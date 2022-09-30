@@ -21,6 +21,10 @@ body.wd-defaults {
   padding-left: 16px;
 }
 
+.wd-pl-12 {
+  padding-left: 12px;
+}
+
 .wd-pr-16 {
   padding-right: 16px;
 }
@@ -55,7 +59,7 @@ body.wd-defaults {
   flex-direction: row;
 }
 
-.align-items-center {
+.wd-align-items-center {
   align-items: center;
 }
 
@@ -75,6 +79,7 @@ body.wd-defaults {
   border-bottom: 1px rgb(47, 51, 54) solid;
 }
 
+.wd-color-active,
 .wd-color-active a,
 .wd-color-active a:active,
 .wd-color-active a:hover,
@@ -82,4 +87,12 @@ body.wd-defaults {
   color: rgb(29, 161, 242) !important;
   outline: none;
   text-decoration: none;
+}
+
+.wd-white {
+  color: white;
+}
+
+.wd-light-gray {
+  color: rgb(110, 118, 125);
 }
