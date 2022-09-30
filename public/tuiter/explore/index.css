@@ -5,6 +5,18 @@ body.wd-defaults {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.wd-defaults p {
+  margin: 0;
+  padding: 0;
+}
+
+.wd-layout-con {
+  margin-left: 25px;
+  margin-right: 25px;
+  border-left: 1px rgb(47, 51, 54) solid;
+  border-right: 1px rgb(47, 51, 54) solid;
+}
+
 .wd-pl-16 {
   padding-left: 16px;
 }
@@ -14,19 +26,19 @@ body.wd-defaults {
 }
 
 .wd-f1x {
-  font-size: 110%;
+  font-size: 110% !important;
 }
 
 .wd-f2x {
-  font-size: 120%;
+  font-size: 120% !important;
 }
 
 .wd-f3x {
-  font-size: 130%;
+  font-size: 130% !important;
 }
 
 .wd-f4x {
-  font-size: 140%;
+  font-size: 140% !important;
 }
 
 .wd-p-h-16 {
@@ -104,4 +116,68 @@ body.wd-defaults {
 
 .wd-menu .wd-color-active a {
   border-bottom: 3px rgb(29, 161, 242) solid;
+}
+
+.wd-topic-box {
+  padding: 16px;
+}
+
+.wd-topic-box .wd-topic-box {
+  padding: 0px;
+}
+
+.wd-topic-box .wd-topic-box {
+  padding: 0px;
+}
+
+.wd-topic-box .wd-topic-box:not(:first-child) {
+  margin-top: 16px;
+}
+
+.wd-topic-name {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-topic-title {
+  color: white;
+  font-weight: bold;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+}
+
+.wd-topic-stats {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.wd-flex1 {
+  flex: 1;
+}
+
+.wd-flex0 {
+  flex: 0;
+}
+
+.wd-hr {
+  height: 0px;
+  margin: 0;
+  border: 0;
+  border-style: none;
+  border-bottom: 1px rgb(47, 51, 54) solid;
+}
+
+.wd-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.wd-topic-author {
+  color: white;
 }
