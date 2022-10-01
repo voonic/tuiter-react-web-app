@@ -10,6 +10,11 @@ body.wd-defaults {
   padding: 0;
 }
 
+.wd-defaults a {
+  text-decoration: none;
+  outline: none;
+}
+
 .wd-layout-con {
   margin-left: 25px;
   margin-right: 25px;
