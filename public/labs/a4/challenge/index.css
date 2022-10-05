@@ -40,14 +40,14 @@ p {
 
 
 .wd-img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
 }
 
 .wd-img-labels {
-  left: 10px;
-  bottom: 0px;
+  left: 20px;
+  bottom: 10px;
 }
 
 .wd-bx-br {
@@ -94,20 +94,27 @@ p {
   text-decoration: none;
 }
 
+.link-light-xs,
+.link-light-xs:hover {
+  text-decoration: none;
+  color: #bbb;
+}
+
 .link-dark {
   text-decoration: none;
   font-size: 12px;
   color: #646b72;
   margin: 0;
   padding: 0;
-  padding-right: 10px;
 }
 
-.link-dark:hover {
-  color: #71767a;
+.link-dark:hover,
+.link-dark:focus {
+  color: #8d8f91;
 }
 
-.link-primary:hover {
+.link-primary:hover,
+.link-primary:focus {
   color: #327eed;
 }
 
@@ -132,7 +139,7 @@ p {
 }
 
 .nav-tabs .nav-link:hover {
-  color: #71767a;
+  color: #8d8f91;
 }
 
 .btn-sm {
@@ -143,6 +150,19 @@ p {
 }
 
 h5,
-.h5 {
+.wd-h5 {
   font-size: 1.20rem;
+}
+
+.wd-x0-9 {
+  font-size: 90%;
+}
+
+.wd-hr {
+  height: 0px;
+  margin: 0;
+  border: 0;
+  border-style: none;
+  opacity: 1;
+  border-bottom: 1px rgb(47, 51, 54) solid;
 }
