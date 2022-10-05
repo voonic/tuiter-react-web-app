@@ -18,8 +18,8 @@ body.wd-defaults {
 .wd-layout-con {
   margin-left: 25px;
   margin-right: 25px;
-  border-left: 1px rgb(47, 51, 54) solid;
-  border-right: 1px rgb(47, 51, 54) solid;
+  /* border-left: 1px rgb(47, 51, 54) solid;
+  border-right: 1px rgb(47, 51, 54) solid; */
 }
 
 .wd-pl-16 {
