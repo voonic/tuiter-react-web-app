@@ -1,5 +1,10 @@
 body {
   background-color: white !important;
+  font-size: 15px;
+}
+
+p {
+  margin: 0;
 }
 
 .wd-search-box {
@@ -32,71 +37,18 @@ body {
   width: 100%;
 }
 
-.wd-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.wd-menu>li {
-  display: inline-block;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.wd-menu a {
-  color: rgb(110, 118, 125);
-  outline: none;
-  text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  display: block;
-  font-size: 15px;
-}
-
-.wd-menu .wd-color-active a {
-  border-bottom: 3px rgb(29, 161, 242) solid;
-}
-
-.wd-topic-box {
-  padding: 16px;
-}
-
-.wd-topic-box .wd-topic-box {
-  padding: 0px;
-}
-
-.wd-topic-box .wd-topic-box {
-  padding: 0px;
-}
-
-.wd-topic-box .wd-topic-box:not(:first-child) {
-  margin-top: 16px;
-}
-
-.wd-topic-name {
-  font-size: 13px;
-  color: rgb(110, 118, 125);
-}
-
-.wd-topic-title {
-  color: white;
-  font-weight: bold;
-  padding-top: 3px !important;
-  padding-bottom: 3px !important;
-}
-
-.wd-topic-stats {
-  font-size: 13px;
-  color: rgb(110, 118, 125);
-}
 
 .wd-img {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
 }
 
-.wd-topic-author {
-  color: white;
+.wd-img-labels {
+  left: 10px;
+  bottom: 0px;
+}
+
+.wd-bx-br {
+  border: 1px #d3d3d3 solid;
 }

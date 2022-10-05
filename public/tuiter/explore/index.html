@@ -10,8 +10,7 @@
   <link href="index.css" rel="stylesheet" />
 </head>
 
-<body class="wd-defaults">
-
+<body>
   <div class="container mt-2">
     <div class="row">
       <div class="col-2 col-xl-3">
@@ -85,9 +84,58 @@
           </ul>
         </div>
         <!-- The post div-->
-        <div>
-          <div class="image-label">
-            <img src="./starship-banner.png" class="img-fluid" />
+        <div class="mt-2 wd-bx-br">
+          <div class="image-label position-relative">
+            <img src="./starship-banner.png" class="position-relative img-fluid" />
+            <h2 class="text-white position-absolute wd-img-labels">SpaceX's Starship</h2>
+          </div>
+
+          <!-- Content post -->
+          <div class="d-flex flex-row p-2">
+            <div class="wd-flex1">
+              <p class="text-muted">Web development</p>
+              <p><span class="fw-bold">ReactJS</span> <i class="fa fa-check-circle"></i><span class="text-muted"> -
+                  2h</span></p>
+              <p class="fw-bold">React.js is a component based font end library that makes it very easy to build single
+                page applications or SPAs</p>
+            </div>
+            <div class="wd-flex0">
+              <img src="./react.png" class="wd-img" />
+            </div>
+          </div>
+          <hr class="wd-hr" />
+          <div class="d-flex flex-row p-2">
+            <div class="wd-flex1">
+              <p><span class="fw-bold">JavaScript</span> <i class="fa fa-check-circle"></i><span class="text-muted"> -
+                  2h</span></p>
+              <p class="fw-bold">JavaScript is a programming language that can run on browsers as well as desktops</p>
+            </div>
+            <div class="wd-flex0">
+              <img src="./js.png" class="wd-img" />
+            </div>
+          </div>
+          <hr class="wd-hr" />
+          <div class="d-flex flex-row p-2">
+            <div class="wd-flex1">
+              <p class="text-muted">Web development</p>
+              <p><span class="fw-bold">jQuery</span></p>
+              <p class="text-muted">123K Tweets</p>
+            </div>
+            <div class="wd-flex0">
+              <img src="./jquery.png" class="wd-img" />
+            </div>
+          </div>
+          <hr class="wd-hr" />
+          <div class="d-flex flex-row p-2">
+            <div class="wd-flex1">
+              <p class="text-muted">Web development</p>
+              <p><span class="fw-bold">NodeJS</span> <i class="fa fa-check-circle"></i><span class="text-muted"> -
+                  2h</span></p>
+              <p class="text-muted">123K Tweets</p>
+            </div>
+            <div class="wd-flex0">
+              <img src="./nodejs.png" class="wd-img" />
+            </div>
           </div>
         </div>
 
@@ -95,6 +143,9 @@
       <div class="d-none col-lg-4 col-xl-3 d-lg-block">
         <!-- The right part content of whom to follow-->
         <ul class="list-group">
+          <li class="list-group-item">
+            <span class="fw-bold">Who to follow</span>
+          </li>
           <li class="list-group-item">
             <div class="d-flex flex-row align-items-center">
               <img src="./java.png" width="48" height="48" class="rounded-circle" />
@@ -135,7 +186,7 @@
               <button type="button" class="btn btn-primary btn-sm rounded-pill">Follow</button>
             </div>
           </li>
-          <li class="list-group-item disabled">
+          <li class="list-group-item">
             <div class="d-flex flex-row align-items-center">
               <img src="./tesla.png" width="48" height="48" class="rounded-circle" />
               <div class="flex-fill ps-1">
@@ -149,7 +200,7 @@
       </div>
     </div>
   </div>
-
+  <br />
 </body>
 
 </html>

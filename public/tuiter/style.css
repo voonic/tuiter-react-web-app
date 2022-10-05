@@ -81,6 +81,7 @@ body.wd-defaults {
   margin: 0;
   border: 0;
   border-style: none;
+  opacity: 0.25;
   border-bottom: 1px rgb(47, 51, 54) solid;
 }
 
