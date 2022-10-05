@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <div class="container mt-2">
+  <div class="container">
     <div class="row">
-      <div class="col-2 col-xl-3">
+      <div class="col-2 col-xl-3 mt-2">
         <!-- Render the menu bar-->
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action">
@@ -48,12 +48,12 @@
           <button class="btn btn-primary rounded-pill" type="button">Tweet</button>
         </div>
       </div>
-      <div class="col-10 col-lg-6">
+      <div class="col-10 col-lg-6 wd-bxh-br p-0">
         <!-- The centered container for the centered content-->
         <!-- The header div -->
-        <div class="wd-search-box">
-          <div class="wd-search-inner">
-            <span class="px-3"><i class="fa fa-search"></i></span>
+        <div class="wd-search-box px-3 mt-2">
+          <div class="wd-search-inner bg-dark">
+            <span class="px-3 text-muted"><i class="fa fa-search"></i></span>
             <input type="text" placeholder="Search Tuiter" class="wd-form-control" />
           </div>
           <div class="wd-search-link">
@@ -61,15 +61,19 @@
               <i class="fa fa-cog"></i>
             </a>
           </div>
+
         </div>
         <!-- The menu div -->
-        <div>
+        <div class="px-3">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link active" href="#">For You</a>
+              <a class="nav-link" href="#">For You</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COVID-19</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">News</a>
@@ -78,12 +82,12 @@
               <a class="nav-link" href="#">Sports</a>
             </li>
             <li class="nav-item d-none d-md-inline-block">
-              <a class="nav-link" href="#">Entertainment</a>
+              <a class="nav-link active" href="#">Entertainment</a>
             </li>
           </ul>
         </div>
         <!-- The post div-->
-        <div class="mt-2 wd-bx-br">
+        <div class="wd-bx-br">
           <div class="image-label position-relative">
             <img src="./starship-banner.png" class="position-relative img-fluid" />
             <h2 class="text-white position-absolute wd-img-labels">SpaceX's Starship</h2>
@@ -139,61 +143,34 @@
         </div>
 
       </div>
-      <div class="d-none col-lg-4 col-xl-3 d-lg-block">
+      <div class="d-none col-lg-4 col-xl-3 d-lg-block mt-2">
         <!-- The right part content of whom to follow-->
-        <ul class="list-group">
+        <ul class="list-group bg-dark">
           <li class="list-group-item">
-            <span class="fw-bold">Who to follow</span>
+            <h5>Who to follow</h5>
           </li>
           <li class="list-group-item">
             <div class="d-flex flex-row align-items-center">
-              <img src="./java.png" width="48" height="48" class="rounded-circle" />
+              <img src="./img-1.jpeg" width="48" height="48" class="rounded-circle" />
               <div class="flex-fill ps-1">
-                <p class="fw-bold">Java <i class="fa fa-check-circle"></i></p>
-                <p class="text-muted">@java</p>
+                <p class="fw-bold">The Babylon Bee <i class="fa-solid fa-circle-check"></i></p>
+                <p class="text-muted">@TheBabylonBee</p>
               </div>
-              <button type="button" class="btn btn-primary btn-sm rounded-pill">Follow</button>
+              <button type="button" class="btn btn-light btn-sm rounded-pill">Follow</button>
             </div>
           </li>
           <li class="list-group-item">
             <div class="d-flex flex-row align-items-center">
-              <img src="./space.png" width="48" height="48" class="rounded-circle" />
+              <img src="./jack.jpeg" width="48" height="48" class="rounded-circle" />
               <div class="flex-fill ps-1">
-                <p class="fw-bold">Relativity Space <i class="fa fa-check-circle"></i></p>
-                <p class="text-muted">@relativityspace</p>
+                <p class="fw-bold">Jack Posobiec &#x1F1FA;&#x1F1F8; <i class="fa-solid fa-circle-check"></i></p>
+                <p class="text-muted">@JackPosobiec</p>
               </div>
-              <button type="button" class="btn btn-primary btn-sm rounded-pill">Follow</button>
+              <button type="button" class="btn btn-light btn-sm rounded-pill">Follow</button>
             </div>
           </li>
           <li class="list-group-item">
-            <div class="d-flex flex-row align-items-center">
-              <img src="./virgin.png" width="48" height="48" class="rounded-circle" />
-              <div class="flex-fill ps-1">
-                <p class="fw-bold">Virgin Galactic <i class="fa fa-check-circle"></i></p>
-                <p class="text-muted">@virgingalactic</p>
-              </div>
-              <button type="button" class="btn btn-primary btn-sm rounded-pill">Follow</button>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex flex-row align-items-center">
-              <img src="./nasa.png" width="48" height="44" class="rounded-circle" />
-              <div class="flex-fill ps-1">
-                <p class="fw-bold">NASA <i class="fa fa-check-circle"></i></p>
-                <p class="text-muted">@NASA</p>
-              </div>
-              <button type="button" class="btn btn-primary btn-sm rounded-pill">Follow</button>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex flex-row align-items-center">
-              <img src="./tesla.png" width="48" height="48" class="rounded-circle" />
-              <div class="flex-fill ps-1">
-                <p class="fw-bold">Tesla <i class="fa fa-check-circle"></i></p>
-                <p class="text-muted">@Tesla</p>
-              </div>
-              <button type="button" class="btn btn-primary btn-sm rounded-pill">Follow</button>
-            </div>
+            <a href="#" class="link-primary" title="Explore settings">Show more</a>
           </li>
         </ul>
       </div>
