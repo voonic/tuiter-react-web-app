@@ -1,10 +1,10 @@
-export default exploreItems = [
+export default [
   {
     topic: 'Web Development',
     userName: 'ReactJS',
     time: '2h',
     title: 'React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs',
-    image: '../../images/react-blue.png'
+    image: '../../images/react.png'
   },
   {
     topic: '',
@@ -27,6 +27,7 @@ export default exploreItems = [
     userName: 'NodeJS',
     title: '',
     time: 'last month',
-    image: '../../images/node.png',
+    image: '../../images/nodejs.png',
     tweets: '120K',
-  },];
+  },
+];
