@@ -7,6 +7,7 @@ const PostSummaryItem = (item) => {
           <p><span class="fw-bold">${item.userName}</span> <i class="fa fa-check-circle"></i><span class="text-muted"> -
               ${item.time}</span></p>
           <p class="fw-bold">${item.title}</p>
+          ${item.tweets ? `<p class="text-muted">${item.tweets} tweets</p>` : ''}
         </div>
         <div class="ps-2">
           <img src="${item.image}" class="wd-img" />
