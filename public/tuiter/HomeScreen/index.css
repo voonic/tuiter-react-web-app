@@ -19,6 +19,7 @@ p {
 
 .wd-post-box {
   padding: 12px 16px;
+  /* border-bottom: 1px rgb(47, 51, 54) solid; */
 }
 
 .wd-avatar {
@@ -41,20 +42,13 @@ p {
   border: 1px rgb(47, 51, 54) solid;
   border-radius: 15px;
   overflow: hidden;
-  width: 506px;
+  max-width: 506px;
   box-sizing: border-box;
   margin-top: 12px;
 }
 
 .wd-post-card img {
   border-bottom: 1px rgb(47, 51, 54) solid;
-}
-
-.wd-post-card .wd-title {
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 4px;
 }
 
 .wd-post-card .wd-box {
@@ -65,11 +59,6 @@ p {
   max-height: 264px;
   width: 100%;
   object-fit: cover;
-}
-
-.wd-post-card .wd-content {
-  font-size: 15px;
-  color: rgb(110, 118, 125);
 }
 
 .wd-post-actions {
@@ -94,4 +83,10 @@ p {
 
 .wd-post-actions a span {
   padding-left: 12px;
+}
+
+.wd-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
 }
