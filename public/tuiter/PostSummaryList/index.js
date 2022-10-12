@@ -1,5 +1,5 @@
 import PostSummaryItem from "./PostSummaryItem.js";
-import exploreItems from "./post.js"
+import exploreItems from "./postSummary.js"
 const PostSummaryList = () => {
   return (`
     <!-- The center part content of posts -->
