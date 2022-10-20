@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
 
-const NavigationSidebar = () => {
+const NavigationSidebar = ({ defaultActive }) => {
   const { pathname } = useLocation();
   const paths = pathname.split('/')
-  const active = paths[2];
+  const active = paths[2] || defaultActive;
 
   return (
     <div className="list-group">
