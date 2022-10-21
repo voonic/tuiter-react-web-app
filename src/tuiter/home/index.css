@@ -14,12 +14,12 @@ p {
 
 .wd-post-box {
   padding: 12px 16px;
-  border: 1px #ddd solid;
-  border-bottom: 0
+  border-top: 1px #ddd solid;
+  border-left: 1px #ddd solid;
+  border-right: 1px #ddd solid;
 }
 
 .wd-post-box:first-child {
-  border-bottom: 1px #ddd solid;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
