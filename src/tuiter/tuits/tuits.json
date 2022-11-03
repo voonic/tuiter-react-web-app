@@ -1,32 +1,26 @@
 [
   {
     "_id": 123,
-    "avatarIcon": "bob.png",
-    "userName": "Spacex",
-    "handle": "spacex",
-    "time": "23h",
-    "webURL": "http: //google.com",
-    "post": "Dennis and Akkio Tito are the first two members on the starhip second commercial spaceflight around the moon.",
-    "details": {
-      "title": "Countdown: Inspiration4 mission to space | Netflix Official Site",
-      "description": "From training to launch to landing, this all-access docuseries rides along with the inpiration4 on the first all-civillian orbital space..."
-    },
-    "image": "banner.jpeg",
-    "comments": "4.2K",
-    "retweets": "3.5K",
-    "likes": "37.5K"
+    "topic": "Space",
+    "userName": "SpaceX",
+    "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+    "time": "2h",
+    "image": "tesla.png"
   },
   {
-    "_id": 124,
-    "avatarIcon": "dp.jpeg",
-    "userName": "New York Post",
-    "handle": "nypost",
-    "time": "23h",
-    "webURL": "http: //tribe.al/nx2Gfaq",
-    "post": "Grime seen reading Karl Marx following split with world\"s richest man Elon Musk",
-    "image": "banner-2.jpeg",
-    "comments": "965",
-    "retweets": "2.4K",
-    "likes": "4K"
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "2h",
+    "image": "spacex.png"
+  },
+  {
+    "_id": 345,
+    "topic": "Energy",
+    "userName": "Tesla",
+    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+    "time": "4d",
+    "image": "tesla.png"
   }
 ]
