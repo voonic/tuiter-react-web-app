@@ -1,5 +1,13 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { deleteTuit } from "./tuits-reducer";
+
 const TuitItem = ({ item }) => {
+  const dispatch = useDispatch();
+  const deleteTuitHandler = (id) => {
+    dispatch(deleteTuit(id));
+  }
+
   return (
     <div className="wd-post-box">
       <div className="d-flex flex-row">
@@ -13,7 +21,8 @@ const TuitItem = ({ item }) => {
               <span className="text-muted"> @{item.handle} &#xb7; {item.time}</span>
             </div>
             <div>
-              <i className="fa-solid text-muted fa-ellipsis"></i>
+              <i className="fa-solid text-muted fa-times" onClick={() => deleteTuitHandler(item._id)}></i>
+              {/* {!!item.deletable && <i className="fa-solid text-muted fa-times" onClick={() => deleteTuitHandler(item._id)}></i>} */}
             </div>
           </div>
           <p className="wd-post-content">
