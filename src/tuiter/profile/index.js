@@ -40,6 +40,11 @@ const ProfileComponent = () => {
             <i className="fa fa-calendar" /> Joined: {profileData.dateJoined}
           </span>
         </div>
+        <div className="mt-3 d-flex flex-row text-muted">
+          <span className="pe-3">
+            <i className="fa fa-globe" /> <a className="text-primary" target="_blank" href={profileData.website}>{profileData.website}</a>
+          </span>
+        </div>
         <div className="mt-3 d-flex flex-row text-muted mb-3">
           <span className="pe-3">
             <b className="text-dark">{profileData.followingCount}</b> Following

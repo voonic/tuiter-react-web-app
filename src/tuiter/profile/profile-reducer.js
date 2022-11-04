@@ -7,7 +7,7 @@ const currentUser = {
   profilePicture: 'js.png',
   bannerPicture: 'banner.jpeg',
   bio: 'Student, Software Engineer, Game development, Space, and Coding enthusiast. Retuits and likes are not endorsements.',
-  website: 'youtube.com/webdevtv',
+  website: 'https://stackoverflow.com/users/2261259/voonic',
   location: 'Boston, MA',
   dateOfBirth: '7/7/1968',
   dateJoined: '4/2009',

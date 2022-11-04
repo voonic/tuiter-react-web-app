@@ -13,4 +13,32 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 3px;
+}
+
+.wd-dp-box img {
+  border-radius: 50%;
+}
+
+.wd-inp-con {
+  border: 1px #ddd solid;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.wd-inp-con label {
+  font-size: 85%;
+}
+
+.wd-inp-con input,
+.wd-inp-con textarea {
+  border: 0;
+  outline: none;
+  padding: 0;
+}
+
+.wd-inp-con input:focus,
+.wd-inp-con textarea:focus {
+  outline: none;
+  box-shadow: none;
 }
