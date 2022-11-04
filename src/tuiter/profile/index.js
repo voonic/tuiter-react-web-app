@@ -6,7 +6,7 @@ import "./profile.css";
 const ProfileComponent = () => {
   const profileData = useSelector(state => state.profile)
   return (
-    <div>
+    <div className="wd-con-box">
       <div className="d-flex flex-row">
         <div>
           <i className="fa fa-arrow-left text-muted p-3" />
@@ -40,7 +40,7 @@ const ProfileComponent = () => {
             <i className="fa fa-calendar" /> Joined: {profileData.dateJoined}
           </span>
         </div>
-        <div className="mt-3 d-flex flex-row text-muted">
+        <div className="mt-3 d-flex flex-row text-muted mb-3">
           <span className="pe-3">
             <b className="text-dark">{profileData.followingCount}</b> Following
           </span>
