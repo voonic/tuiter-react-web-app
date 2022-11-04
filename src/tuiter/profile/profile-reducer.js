@@ -21,10 +21,7 @@ const profileSlice = createSlice({
   initialState: currentUser,
   reducers: {
     editProfile(state, action) {
-      state.unshift({
-        ...currentUser,
-        ...action.payload,
-      })
+      return action.payload;
     },
   }
 });
