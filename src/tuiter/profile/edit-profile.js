@@ -36,9 +36,21 @@ const EditProfileComponent = () => {
         </div>
       </div>
       <div className="position-relative">
-        <img className="img-fluid" src={`/images/${profileData.bannerPicture}`} alt="profile banner" />
+        <div className="position-relative">
+          <img className="img-fluid" src={`/images/${profileData.bannerPicture}`} alt="profile banner" />
+          <div className="position-absolute wd-dp-layover text-white">
+            <span className="wd-pointer">
+              <i className="fa fa-camera fa-2x" />
+              <span className="p-3" />
+              <i className="fa fa-times fa-2x" />
+            </span>
+          </div>
+        </div>
         <div className="position-absolute wd-dp-box ms-3">
           <img src={`/images/${profileData.profilePicture}`} className="wd-dp img-fluid" />
+          <div className="position-absolute wd-dp-layover wd-pointer text-white">
+            <i className="fa fa-camera fa-2x" />
+          </div>
         </div>
       </div>
       <div className="ms-3 me-3 mt-5 pt-4">

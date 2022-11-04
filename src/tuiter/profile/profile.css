@@ -20,6 +20,21 @@
   border-radius: 50%;
 }
 
+.wd-dp-layover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.wd-pointer {
+  cursor: pointer;
+}
+
 .wd-inp-con {
   border: 1px #ddd solid;
   padding: 10px;
