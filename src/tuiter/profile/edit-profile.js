@@ -11,18 +11,9 @@ const EditProfileComponent = () => {
 
   const inputChangeHandler = (key, value) => {
     setNewProfileData(oldstate => {
-      if (key == 'fullName') {
-        const splitName = value.split(/\\s/);
-        return {
-          ...oldstate,
-          firstName: splitName[0],
-          lastName: splitName[1] || '',
-        }
-      } else {
-        return {
-          ...oldstate,
-          [key]: value,
-        }
+      return {
+        ...oldstate,
+        [key]: value,
       }
     });
   }
@@ -52,8 +43,12 @@ const EditProfileComponent = () => {
       </div>
       <div className="ms-3 me-3 mt-5 pt-4">
         <div className="wd-inp-con form-group">
-          <label htmlFor="fullnameInput">Name</label>
-          <input type="text" className="form-control" id="fullnameInput" placeholder="Enter your full name" value={profileData.firstName + ' ' + profileData.lastName} onChange={(e) => inputChangeHandler("fullName", e.target.value)} />
+          <label htmlFor="firstnameInput">First Name</label>
+          <input type="text" className="form-control" id="firstnameInput" placeholder="Enter your first name" value={profileData.firstName} onChange={(e) => inputChangeHandler("firstName", e.target.value)} />
+        </div>
+        <div className="wd-inp-con form-group mt-3">
+          <label htmlFor="lastnameInput">Last Name</label>
+          <input type="text" className="form-control" id="lastnameInput" placeholder="Enter your last name" value={profileData.lastName} onChange={(e) => inputChangeHandler("lastName", e.target.value)} />
         </div>
         <div className="wd-inp-con form-group mt-3">
           <label htmlFor="bioInput">Bio</label>
