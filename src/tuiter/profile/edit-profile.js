@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import "./profile.css";
 
 const EditProfileComponent = () => {
@@ -10,7 +11,7 @@ const EditProfileComponent = () => {
     <div className="wd-con-box">
       <div className="d-flex flex-row align-items-center">
         <div>
-          <i className="fa fa-times text-muted p-3" />
+          <Link to="/tuiter/profile"><i className="fa fa-times text-muted p-3" /></Link>
         </div>
         <div className="flex-fill">
           <p className="fw-bold m-0">Edit Profile</p>
@@ -41,6 +42,13 @@ const EditProfileComponent = () => {
         <div className="wd-inp-con form-group mt-3">
           <label for="websiteInput">Website</label>
           <input type="text" className="form-control" id="websiteInput" placeholder="Your personal website link" defaultValue={profileData.website} />
+        </div>
+        <div className="form-group mt-3">
+          <label for="dateInput">Birthdate</label>
+          <input type="date" className="form-control" id="dateInput" defaultValue={profileData.dateOfBirth} />
+        </div>
+        <div className="form-group mt-3 text-muted">
+          <p>Switch to professional <i className="fa fa-arrow-right"></i></p>
         </div>
       </div>
     </div>
