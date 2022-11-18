@@ -20,13 +20,13 @@ const TuitItem = ({ item }) => {
     <div className="wd-post-box">
       <div className="d-flex flex-row">
         <div>
-          <img className="wd-avatar" src={`/images/${item.image}`} />
+          <img className="wd-avatar" src={`/images/${item.image || 'default.png'}`} />
         </div>
         <div className="flex-fill ps-3">
           <div className="d-flex flex-row wd-post-author wd-align-items-center">
             <div className="flex-fill">
               <span className="fw-bold">{item.userName} <i className="fa text-primary fa-check-circle"></i></span>
-              <span className="text-muted"> @{item.handle} &#xb7; {item.time}</span>
+              <span className="text-muted"> @{item.handle || "user"} &#xb7; {item.time}</span>
             </div>
             <div>
               <i className="fa-solid text-muted fa-times" onClick={() => deleteTuitHandler(item._id)}></i>
