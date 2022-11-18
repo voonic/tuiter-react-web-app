@@ -1,11 +1,19 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTuitThunk } from "../../services/tuits-thunks";
+import { deleteTuitThunk, updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitItem = ({ item }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
     dispatch(deleteTuitThunk(id));
+  }
+
+  const updateLikes = (tuit) => {
+    dispatch(updateTuitThunk({
+      ...tuit,
+      likes: tuit.likes + 1,
+      liked: true,
+    }));
   }
 
   return (
@@ -37,7 +45,7 @@ const TuitItem = ({ item }) => {
           <div className="d-flex flex-row mt-3">
             <div className="flex-fill"><a href="#" className="text-muted text-decoration-none"><i className="fa-solid fa-comment"></i><span className="ps-2">{item.replies}</span></a></div>
             <div className="flex-fill"><a href="#" className="text-muted text-decoration-none"><i className="fa-solid fa-retweet"></i><span className="ps-2">{item.retuits}</span></a></div>
-            <div className="flex-fill"><a href="#" className={`${item.liked ? "text-danger" : "text-muted"} text-decoration-none`}><i className="fa-solid fa-heart"></i><span className="ps-2">{item.likes}</span></a></div>
+            <div className="flex-fill"><a href="#" className={`${item.liked ? "text-danger" : "text-muted"} text-decoration-none`} onClick={() => updateLikes(item)}><i className="fa-solid fa-heart"></i><span className="ps-2">{item.likes}</span></a></div>
             <div className="flex-fill"><a href="#" className="text-muted text-decoration-none"><i className="fa-solid fa-share-nodes"></i></a></div>
           </div>
         </div>
