@@ -1,5 +1,6 @@
 import axios from 'axios';
-const TUITS_API = 'http://localhost:4000/api/tuits';
+//const TUITS_API = 'http://localhost:4000/api/tuits';
+const TUITS_API = 'https://radiant-castle-96986.herokuapp.com/api/tuits';
 
 export const deleteTuit = async (tid) => {
   const response = await axios
