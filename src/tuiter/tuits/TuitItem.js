@@ -24,6 +24,22 @@ const TuitItem = ({ item }) => {
     }
   }
 
+  const updateDislikes = (tuit) => {
+    if (tuit.disliked) {
+      dispatch(updateTuitThunk({
+        ...tuit,
+        dislikes: tuit.dislikes - 1,
+        disliked: false,
+      }));
+    } else {
+      dispatch(updateTuitThunk({
+        ...tuit,
+        dislikes: tuit.dislikes + 1,
+        disliked: true,
+      }));
+    }
+  }
+
   return (
     <div className="wd-post-box">
       <div className="d-flex flex-row">
@@ -54,6 +70,7 @@ const TuitItem = ({ item }) => {
             <div className="flex-fill"><a href="#" className="text-muted text-decoration-none"><i className="fa-solid fa-comment"></i><span className="ps-2">{item.replies}</span></a></div>
             <div className="flex-fill"><a href="#" className="text-muted text-decoration-none"><i className="fa-solid fa-retweet"></i><span className="ps-2">{item.retuits}</span></a></div>
             <div className="flex-fill"><a href="#" className={`${item.liked ? "text-danger" : "text-muted"} text-decoration-none`} onClick={() => updateLikes(item)}><i className="fa-solid fa-heart"></i><span className="ps-2">{item.likes}</span></a></div>
+            <div className="flex-fill"><a href="#" className={`${item.disliked ? "text-danger" : "text-muted"} text-decoration-none`} onClick={() => updateDislikes(item)}><i className="fa-solid fa-thumbs-down"></i><span className="ps-2">{item.dislikes}</span></a></div>
             <div className="flex-fill"><a href="#" className="text-muted text-decoration-none"><i className="fa-solid fa-share-nodes"></i></a></div>
           </div>
         </div>
