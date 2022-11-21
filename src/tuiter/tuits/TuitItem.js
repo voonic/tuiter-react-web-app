@@ -9,11 +9,19 @@ const TuitItem = ({ item }) => {
   }
 
   const updateLikes = (tuit) => {
-    dispatch(updateTuitThunk({
-      ...tuit,
-      likes: tuit.likes + 1,
-      liked: true,
-    }));
+    if (tuit.liked) {
+      dispatch(updateTuitThunk({
+        ...tuit,
+        likes: tuit.likes - 1,
+        liked: false,
+      }));
+    } else {
+      dispatch(updateTuitThunk({
+        ...tuit,
+        likes: tuit.likes + 1,
+        liked: true,
+      }));
+    }
   }
 
   return (
